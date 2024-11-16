@@ -1,11 +1,11 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React from "react";
+import { useParams } from "react-router-dom";
 
 function User() {
-    const {userid} = useParams()
+  const { userid } = useParams();
   return (
-    <div className='bg-green-600 text-white text-3xl p-4'>User:{userid}</div>
-  )
+    <div className="bg-green-600 text-white text-3xl p-4">User:{userid}</div>
+  );
 }
 
-export default User
+export default User;

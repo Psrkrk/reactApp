@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,7 +8,9 @@ function Footer() {
         <div className="md:flex md:justify-between">
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+                Resources
+              </h2>
               <ul className="font-medium text-gray-500">
                 <li className="mb-4">
                   <Link to="/" className="hover:underline">
@@ -23,7 +25,9 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+                Follow us
+              </h2>
               <ul className="font-medium text-gray-500">
                 <li className="mb-4">
                   <a
@@ -43,7 +47,9 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+                Legal
+              </h2>
               <ul className="font-medium text-gray-500">
                 <li className="mb-4">
                   <Link to="#" className="hover:underline">
@@ -62,7 +68,10 @@ function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
-            <a href="https://github.com/Psrkrk?tab=repositories" className="hover:underline">
+            <a
+              href="https://github.com/Psrkrk?tab=repositories"
+              className="hover:underline"
+            >
               &copy;PankajSuman
             </a>
             . All Rights Reserved.
@@ -70,7 +79,7 @@ function Footer() {
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <Link to="#" className="text-gray-500 hover:text-gray-900">
               <svg
-                className="w-4 h-4"
+                className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -84,9 +93,9 @@ function Footer() {
               </svg>
               <span className="sr-only">Facebook page</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="#" className="text-gray-500 hover:text-gray-900">
               <svg
-                className="w-4 h-4"
+                className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -96,9 +105,9 @@ function Footer() {
               </svg>
               <span className="sr-only">Discord community</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="#" className="text-gray-500 hover:text-gray-900">
               <svg
-                className="w-4 h-4"
+                className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
