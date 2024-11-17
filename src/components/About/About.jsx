@@ -8,8 +8,11 @@ export default function About() {
           <div className="w-full md:w-5/12 lg:w-5/12">
             <img
               className="w-full h-auto rounded-lg"
-              src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+              src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/photo-1518081461904-9d8f136351c2.jpg"
               alt="Adventure Image"
+              onError={(e) => {
+                e.target.src = "/images/placeholder.png";
+              }}
             />
           </div>
           <div className="w-full md:w-7/12 lg:w-6/12">
