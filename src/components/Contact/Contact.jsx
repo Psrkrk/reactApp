@@ -16,21 +16,23 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Check if all fields are filled
     if (!formData.name || !formData.email || !formData.tel) {
       alert("Please fill in all fields.");
       return;
     }
 
+    // Sending email with EmailJS
     emailjs
       .send(
-        "service_y7onaxn", // Your EmailJS Service ID
-        "template_oe009d2", // Your EmailJS Template ID
+        "service_n7vm6m9", // Replace with your EmailJS service ID
+        "template_oe009d2", // Replace with your EmailJS template ID
         {
           name: formData.name,
           email: formData.email,
           tel: formData.tel,
         },
-        "17lAGwzQ7QCTIQsuv" // Your EmailJS Public Key
+        "17lAGwzQ7QCTIQsuv" // Replace with your EmailJS public key
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
