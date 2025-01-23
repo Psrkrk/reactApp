@@ -3,62 +3,42 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="w-full mx-auto max-w-7xl">
-      <aside className="relative mx-2 overflow-hidden text-black rounded-lg sm:mx-16 sm:py-16">
-        <div className="relative z-10 max-w-screen-xl px-4 pt-10 pb-20 mx-auto sm:py-24 sm:px-6 lg:px-8">
-          <div className="max-w-xl space-y-8 text-center sm:mt-1 mt-80 sm:text-right sm:ml-auto">
-            <h2 className="text-4xl font-bold sm:text-5xl text-orange-500">
-              Welcome to Explore World
-              <span className="hidden text-4xl sm:block text-orange-500">
-                now we can explore everything
-              </span>
-            </h2>
+    <section className="relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+
+      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div className="max-w-xl text-center sm:text-left">
+          <h1 className="text-3xl font-extrabold sm:text-5xl">
+            Let us find your
+            <strong className="block font-extrabold text-rose-700">
+              {" "}
+              Forever Home.{" "}
+            </strong>
+          </h1>
+
+          <p className="mt-4 max-w-lg sm:text-xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            illo tenetur fuga ducimus numquam ea!
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4 text-center">
+            <Link
+              to="#"
+              className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+            >
+              Get Started
+            </Link>
 
             <Link
-              className="inline-flex items-center px-6 py-3 font-medium text-white bg-orange-700 rounded-lg hover:opacity-75"
-              to="/"
+              to="#"
+              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
-              <svg
-                fill="white"
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg"
-                fillRule="evenodd"
-                clipRule="evenodd"
-              >
-                <path d="M1.571 23.664l10.531-10.501 3.712 3.701-12.519 6.941c-.476.264-1.059.26-1.532-.011l-.192-.13zm9.469-11.56l-10.04 10.011v-20.022l10.04 10.011zm6.274-4.137l4.905 2.719c.482.268.781.77.781 1.314s-.299 1.046-.781 1.314l-5.039 2.793-4.015-4.003 4.149-4.137zm-15.854-7.534c.09-.087.191-.163.303-.227.473-.271 1.056-.275 1.532-.011l12.653 7.015-3.846 3.835-10.642-10.612z" />
-              </svg>
-              &nbsp; Download now
+              Learn More
             </Link>
           </div>
         </div>
-
-        <div className="absolute inset-0 w-full h-full pt-12 sm:my-20 sm:pt-1 ">
-          <img
-            className="w-96"
-            src="https://i.ibb.co/5BCcDYB/Remote2.png"
-            alt="image1"
-          />
-        </div>
-      </aside>
-
-      <div className="grid place-items-center sm:mt-20">
-        <img
-          className="w-48 sm:w-96"
-          src="https://i.ibb.co/2M7rtLk/Remote1.png"
-          alt="image2"
-        />
       </div>
-
-      <h2 className="py-10 text-base font-medium text-center sm:text-lg text-black">
-        At Explore World, we believe that the world is full of wonders waiting
-        to be discovered. Our platform provides you with the tools and resources
-        to dive into new places, cultures, and experiences from the comfort of
-        your home. Whether you're looking to plan your next adventure or simply
-        want to learn about different parts of the globe, Explore World is here
-        to inspire and inform. Join us in broadening your horizons!
-      </h2>
-    </div>
+    </section>
   );
 }
 

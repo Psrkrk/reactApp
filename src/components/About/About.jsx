@@ -5,16 +5,20 @@ export default function About() {
     <div className="py-10 md:py-16" style={{ backgroundColor: "#0d1117" }}>
       <div className="container px-4 mx-auto text-white sm:px-6 md:px-12 lg:px-24 xl:px-6">
         <div className="space-y-8 md:space-y-0 md:flex md:gap-8 lg:items-center lg:gap-12">
+          {/* Image Section */}
           <div className="w-full md:w-5/12 lg:w-5/12">
             <img
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg object-cover"
               src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/photo-1518081461904-9d8f136351c2.jpg"
               alt="Adventure Image"
               onError={(e) => {
-                e.target.src = "/images/placeholder.png";
+                e.target.onerror = null; // Prevent infinite loop
+                e.target.src = "/images/placeholder.png"; // Fallback image
               }}
             />
           </div>
+
+          {/* Text Section */}
           <div className="w-full md:w-7/12 lg:w-6/12">
             <h2 className="text-2xl font-bold md:text-3xl lg:text-4xl text-white">
               Explore World: Your Gateway to Adventure
